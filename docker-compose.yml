@@ -1,4 +1,4 @@
-version: '3.7'
+version: '3.3'
 
 services:
   web:
@@ -17,6 +17,7 @@ services:
       - SQL_PASSWORD=hello_django
       - SQL_HOST=db
       - SQL_PORT=5432
+      - DATABASE=postgres
     depends_on:
       - db
   db:
